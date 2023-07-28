@@ -15,7 +15,7 @@ st.set_page_config(page_title="Diabetic Retinopathy Classification", page_icon="
 st.title("Diabetic Retinopathy Classification")
 st.sidebar.title("Menu")
 
-menu = ["Home", "User Guide", "Upload Image and get Predicted", "About", 'Contact us', 'Map' ]
+menu = ["Home", "User Guide", "Upload Image and get Predicted", "About", 'Contact us']
 choice = st.sidebar.selectbox("Select an option", menu)
 
 
@@ -177,7 +177,3 @@ if choice == "User Guide":
 	st.warning("⚠️ Proper medication is required!!!")
 	st.subheader("It means that you need to take care of your health and activities, because the model predicted that, in future you might suffer from diabetic retinopathy. And suggested that, its better to consult a doctor/specialist.")
 	st.subheader("*------------------------------------------------------------*")
-if choice == "Map":
-
-	st.map()
-  
